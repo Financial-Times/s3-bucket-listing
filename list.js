@@ -328,8 +328,9 @@ function prepareTable(info) {
 }
 
 // Encode everything but "/" which are significant in paths and to S3
+// Also preserve ":" as it's valid in S3 keys (e.g., timestamps like 2025-12-18T09:25:36)
 function encodePath(path) {
-  return encodeURIComponent(path).replace(/%2F/g, '/')
+  return encodeURIComponent(path).replace(/%2F/g, '/').replace(/%3A/g, ':')
 }
 
 function renderRow(item, cols) {

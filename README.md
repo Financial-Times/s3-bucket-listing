@@ -1,3 +1,15 @@
+## This is a fork of the original repo:https://github.com/rufuspollock/s3-bucket-listing
+
+The main goal is to create a visualization of all poll tracker data that is available in the S3 bucket.
+
+Instructions:
+1. Make changes to the poll-tracking branch
+2. Push changes to the remote poll-tracking branch (This branch is used for the Github Pages)
+3. Copy index.html into the S3 bucket
+4. Test if the html page loads the S3 UI
+
+## Original Docs below
+
 Create nice directory listings for s3 buckets using only javascript and HTML.
 
 The listing can be deployed on any site and can also be deployed into a bucket.
